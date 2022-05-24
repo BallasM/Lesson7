@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Spring.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #6897bb;}
+.s4 { color: #808080;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Spring.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">java.util.Scanner</span><span class="s0">;</span>
+<span class="s0">public class </span><span class="s1">Spring {</span>
+    <span class="s0">public static void </span><span class="s1">main(String[] args) {</span>
+        <span class="s1">Scanner scanner = </span><span class="s0">new </span><span class="s1">Scanner(System.in)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Please, enter the month: &quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s0">int </span><span class="s1">mMonth = scanner.nextInt()</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Please, enter the day: &quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">Scanner scanner1 = </span><span class="s0">new </span><span class="s1">Scanner(System.in)</span><span class="s0">;</span>
+       <span class="s0">int </span><span class="s1">mDay = scanner1.nextInt()</span><span class="s0">;</span>
+        <span class="s0">if </span><span class="s1">((mMonth == </span><span class="s3">1 </span><span class="s1">&amp;&amp; mDay &gt;= </span><span class="s3">1 </span><span class="s1">&amp;&amp; mDay &lt;= </span><span class="s3">31</span><span class="s1">)) {  </span><span class="s4">//  January Period</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;Not a spring date&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">((mMonth == </span><span class="s3">1 </span><span class="s1">&amp;&amp; mDay &lt; </span><span class="s3">1 </span><span class="s1">&amp;&amp; mDay &gt; </span><span class="s3">31</span><span class="s1">)) {  </span><span class="s4">//  January Invalid</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;Invalid Date!&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">((mMonth == </span><span class="s3">2 </span><span class="s1">&amp;&amp; mDay &gt;= </span><span class="s3">1 </span><span class="s1">&amp;&amp; mDay &lt;= </span><span class="s3">28</span><span class="s1">)) {  </span><span class="s4">//  February Period</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;Not a spring date&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">((mMonth == </span><span class="s3">2 </span><span class="s1">&amp;&amp; mDay &lt; </span><span class="s3">1 </span><span class="s1">&amp;&amp; mDay &gt; </span><span class="s3">28</span><span class="s1">)) {    </span><span class="s4">//  February Invalid</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;Invalid Date!&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">((mMonth == </span><span class="s3">3 </span><span class="s1">&amp;&amp; mDay &gt;= </span><span class="s3">1 </span><span class="s1">&amp;&amp; mDay &lt;= </span><span class="s3">19</span><span class="s1">)) {   </span><span class="s4">//  March non Spring Period</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;Not a spring date&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">((mMonth == </span><span class="s3">3 </span><span class="s1">&amp;&amp; mDay &gt;= </span><span class="s3">20 </span><span class="s1">&amp;&amp; mDay &lt;= </span><span class="s3">31</span><span class="s1">)) {  </span><span class="s4">//  March Spring Period</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;It is a spring date!&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">((mMonth == </span><span class="s3">3 </span><span class="s1">&amp;&amp; mDay &lt; </span><span class="s3">1 </span><span class="s1">&amp;&amp; mDay &gt; </span><span class="s3">31</span><span class="s1">)) {   </span><span class="s4">//  March Invalid</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;Invalid Date!&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">((mMonth == </span><span class="s3">4 </span><span class="s1">&amp;&amp; mDay &gt;= </span><span class="s3">1 </span><span class="s1">&amp;&amp; mDay &lt;= </span><span class="s3">30</span><span class="s1">)) {  </span><span class="s4">//  April Valid Spring</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;It is a spring date!&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">((mMonth == </span><span class="s3">4 </span><span class="s1">&amp;&amp; mDay &lt; </span><span class="s3">1 </span><span class="s1">&amp;&amp; mDay &gt; </span><span class="s3">30</span><span class="s1">)) {  </span><span class="s4">//  April Invalid</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;Invalid Date!&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">((mMonth == </span><span class="s3">4 </span><span class="s1">&amp;&amp; mDay &gt;= </span><span class="s3">1 </span><span class="s1">&amp;&amp; mDay &lt;= </span><span class="s3">31</span><span class="s1">)) {  </span><span class="s4">//  May Valid Spring</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;It is a spring date!&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">((mMonth == </span><span class="s3">5 </span><span class="s1">&amp;&amp; mDay &lt; </span><span class="s3">1 </span><span class="s1">&amp;&amp; mDay &gt; </span><span class="s3">31</span><span class="s1">)) {  </span><span class="s4">//  May Invalid</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;Invalid Date!&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">((mMonth == </span><span class="s3">6 </span><span class="s1">&amp;&amp; mDay &gt;= </span><span class="s3">1 </span><span class="s1">&amp;&amp; mDay &lt;= </span><span class="s3">20</span><span class="s1">)) {  </span><span class="s4">//  June Valid Spring</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;It is a spring date!&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">((mMonth == </span><span class="s3">6 </span><span class="s1">&amp;&amp; mDay &gt; </span><span class="s3">20 </span><span class="s1">&amp;&amp; mDay &lt;= </span><span class="s3">30</span><span class="s1">)) {  </span><span class="s4">//  June Valid non Spring</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;Not a spring date&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">((mMonth == </span><span class="s3">6 </span><span class="s1">&amp;&amp; mDay &lt; </span><span class="s3">1 </span><span class="s1">&amp;&amp; mDay &gt; </span><span class="s3">30</span><span class="s1">)) {  </span><span class="s4">//  June Invalid</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;Invalid date!&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">((mMonth == </span><span class="s3">7 </span><span class="s1">&amp;&amp; mDay &gt;= </span><span class="s3">1 </span><span class="s1">&amp;&amp; mDay &lt;= </span><span class="s3">31</span><span class="s1">)) {  </span><span class="s4">//  July Period</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;Not a spring date&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">((mMonth == </span><span class="s3">7 </span><span class="s1">&amp;&amp; mDay &lt; </span><span class="s3">1 </span><span class="s1">&amp;&amp; mDay &gt; </span><span class="s3">31</span><span class="s1">)) { </span><span class="s4">//  July Invalid</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;Invalid date!&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">((mMonth == </span><span class="s3">8 </span><span class="s1">&amp;&amp; mDay &gt;= </span><span class="s3">1 </span><span class="s1">&amp;&amp; mDay &lt;= </span><span class="s3">31</span><span class="s1">)) {  </span><span class="s4">//  August Period</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;Not a spring date&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">((mMonth == </span><span class="s3">8 </span><span class="s1">&amp;&amp; mDay &lt; </span><span class="s3">1 </span><span class="s1">&amp;&amp; mDay &gt; </span><span class="s3">31</span><span class="s1">)) {  </span><span class="s4">//  August Invalid</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;Invalid date!&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">((mMonth == </span><span class="s3">9 </span><span class="s1">&amp;&amp; mDay &gt;= </span><span class="s3">1 </span><span class="s1">&amp;&amp; mDay &lt;= </span><span class="s3">30</span><span class="s1">)) {  </span><span class="s4">//  September Period</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;Not a spring date&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">((mMonth == </span><span class="s3">9 </span><span class="s1">&amp;&amp; mDay &lt; </span><span class="s3">1 </span><span class="s1">&amp;&amp; mDay &gt; </span><span class="s3">30</span><span class="s1">)) {  </span><span class="s4">//  September Invalid</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;Invalid date!&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">((mMonth == </span><span class="s3">10 </span><span class="s1">&amp;&amp; mDay &gt;= </span><span class="s3">1 </span><span class="s1">&amp;&amp; mDay &lt;= </span><span class="s3">31</span><span class="s1">)) {  </span><span class="s4">//  October Period</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;Not a spring date&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">((mMonth == </span><span class="s3">10 </span><span class="s1">&amp;&amp; mDay &lt; </span><span class="s3">1 </span><span class="s1">&amp;&amp; mDay &gt; </span><span class="s3">31</span><span class="s1">)) {  </span><span class="s4">//  October Invalid</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;Invalid date!&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">((mMonth == </span><span class="s3">11 </span><span class="s1">&amp;&amp; mDay &gt;= </span><span class="s3">1 </span><span class="s1">&amp;&amp; mDay &lt;= </span><span class="s3">30</span><span class="s1">)) {  </span><span class="s4">//  November Period</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;Not a spring date&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">((mMonth == </span><span class="s3">11 </span><span class="s1">&amp;&amp; mDay &lt; </span><span class="s3">1 </span><span class="s1">&amp;&amp; mDay &gt; </span><span class="s3">30</span><span class="s1">)) {  </span><span class="s4">//  November Invalid</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;Invalid date!&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">((mMonth == </span><span class="s3">12 </span><span class="s1">&amp;&amp; mDay &gt;= </span><span class="s3">1 </span><span class="s1">&amp;&amp; mDay &lt;= </span><span class="s3">31</span><span class="s1">)) {  </span><span class="s4">//  December Period</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;Not a spring date&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">((mMonth == </span><span class="s3">12 </span><span class="s1">&amp;&amp; mDay &lt; </span><span class="s3">1 </span><span class="s1">&amp;&amp; mDay &gt; </span><span class="s3">31</span><span class="s1">)) {  </span><span class="s4">//  December Invalid</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;Invalid date!&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">}</span><span class="s0">else</span><span class="s1">{</span>
+                <span class="s1">System.out.println(</span><span class="s2">&quot;Invalid date!&quot;</span><span class="s1">)</span><span class="s0">;</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+
+</pre>
+</body>
+</html>
